@@ -1,0 +1,26 @@
+body {
+  background-image: url(./assets/bg-desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+#container {
+  width: 640px;
+  margin: auto;
+  border: 1px solid white;
+  display: block;
+  text-align: center;
+}
+#profile img {
+  width: 112px;
+  margin: auto;
+}
+body * {
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+#profile p{
+  font-weight: 500;
+  line-height: 24px;
+  margin: auto;
+}
