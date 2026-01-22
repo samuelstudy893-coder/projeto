@@ -13,6 +13,7 @@
   --highlight-color: rgba(255, 255, 255, 0.20);
   --highlight-color-hover: rgba(255, 255, 255, 0.20);
   --switch-bg: url(./assets/moon-stars.svg);
+  --overscroll-bg: #0f0f0f;
 }
 
 .light { 
@@ -24,6 +25,7 @@
   --highlight-color: rgba(0, 0, 0, 0.10);
   --highlight-color-hover: rgba(0, 0, 0, 0.10);
   --switch-bg: url(./assets/sun.svg);
+  --overscroll-bg: #f2f2f2;
 }
 body {
   background: var(--bg-url) no-repeat top center/cover;
@@ -31,7 +33,7 @@ body {
 }
 
 html {
-  background: var(--surface-color);
+  background: var(--overscroll-bg);
 } 
 
 #container {
