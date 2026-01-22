@@ -74,11 +74,15 @@ body * {
   left: 0;
   z-index: 1;
   transform: translateY(-50%);
+
+  animation: slide-out 0.2s;
 }
 
+#switch button:hover {
+  outline: 8px solid var(--highlight-color-hover);
+}
 .light #switch button {
-  right: 0;
-  left: initial
+  animation: slide-in  0.2s forwards; 
 }
 #switch span {
   display: block;
@@ -160,4 +164,22 @@ html, body {
   overflow-x: hidden;
   width: 100%;
   overscroll-behavior: none;
+}
+
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+left: 50%;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
 }
